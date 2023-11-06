@@ -1,0 +1,247 @@
+.faq-section {
+	padding: 50px 0px 115px 0px;
+}
+
+ul.product-tab li {
+	cursor: pointer;
+	margin: 0px 40px 0px 0px;
+	font-size: 18px;
+	position: relative;
+	color: #dddddd;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+ul.product-tab li:after {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 100%;
+	top: 30px;
+	left: 0;
+	opacity: 0;
+	background-color: $base-color-2;
+}
+ul.product-tab li.active {
+	color:  $black;
+}
+ul.product-tab li.active:after {
+	opacity: 1;
+}
+
+.tab-content-1 {
+	display: none;
+}
+.ques-ans {
+	h3 {
+		font-size: 22px;
+		font-weight: 500;
+		color: $black;
+		margin-bottom: 20px;
+	}
+}
+// Home Page 2
+
+.faq-secound-home-version {
+	background-image: url(../img/banner/fq-1.jpg);
+	padding: 110px 0px 40px 0px;
+	.section-title {
+		h2,
+		span {
+			color: #fff;
+		}
+	}
+	ul.product-tab li {
+		background-color: #006dad;
+		padding: 5px 15px;
+		font-size: 16px;
+		border-radius: 4px;
+		z-index: 1;
+		margin: 0px 5px 0px 0px;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 100%;
+			width: 100%;
+			background: #17d0cf;
+			background: -moz-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+			background: -webkit-gradient(left top, right top, color-stop(0%, #4eb3bf), color-stop(51%, #17d0cf), color-stop(100%, #4eb3bf));
+			background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #0071b0 100%);
+			background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+			background: -ms-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+			background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
+			background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+			background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+			background-size: 200% auto;
+			left: 0;
+			top: 0;
+			-webkit-transition: .3s all ease-in-out;
+			-o-transition: .3s all ease-in-out;
+			transition: .3s all ease-in-out;
+			border-radius: 4px;
+			z-index: -1;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	ul.product-tab li.active {
+		color: #fff;
+	}
+	ul.product-tab li.active:after {
+		opacity: 1;
+		visibility: visible;
+	}
+	.ques-ans h3 {
+		color: #fff;
+	}
+}
+
+.panel-group {
+	.panel {
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+		margin-bottom: 25px;
+		max-width: 625px;
+		margin:  0 auto;
+	}
+	.panel-body {
+		color: #67a0c9;
+		position: relative;
+		&:before {
+			position: absolute;
+			left: -15px;
+			top: -42px;
+			content: '';
+			background-color: $base-color-2;
+			width: 3px;
+			height: 0%;
+			transition: .3s all ease-in-out;
+		}
+
+	}
+	.collapse.show {
+		.panel-body {
+			&:before {
+				height: 150%;
+			}
+		}
+	}
+	.panel-title {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 26px;
+		color: inherit;
+		position: relative;
+		h3 {
+			position: relative;
+			&:before {
+				position: absolute;
+				width: 3px;
+				height: 25px;
+				left: -15px;
+				content: '';
+				background-color: #4a8ec0;
+				top: 22px;
+			}
+		}
+		.btn-link {
+			display: block;
+			padding: 15px 0px 15px;
+			position: relative;
+			width: 100%;
+			text-align: left;
+			text-decoration: none;
+			font-size: 22px;
+			font-weight: 500;
+			color: $base-color-2;
+			&:before {
+				content: '\f139';
+				position: absolute;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+				right: 20px;
+				top: 20px;
+				font-size: 16px;
+				transition: all 0.5s;
+				transform: scale(1);
+				color:  $base-color-2;
+			}
+			&:after {
+				content: "" ;
+				font-size: 16px;
+				position: absolute;
+				right: 20px;
+				top: 20px;
+				transform: scale(0);
+				transition: all 0.5s;
+				color:  $base-color-2;
+			}
+			&:hover {
+				text-decoration: none;
+				color: $base-color-2;
+			}
+		}
+	}
+	.btn-link.collapsed {
+		color: $white;
+		&:before {
+			content: ' ';
+			transition: all 0.5s;
+			transform: scale(0);
+		}
+		&:after {
+			content: "\f13a";
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			transition: all 0.5s;
+			transform: scale(1);
+			color: #4d8fbe;
+		}
+	}
+}
+#accordion {
+	.btn {
+		white-space: inherit;
+	}
+}
+.faq-page-section {
+	padding: 80px 0px 80px 0px; 
+	.panel-group .btn-link.collapsed {
+		color: $black;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.panel-group .panel-title .btn-link:before,
+	.panel-group .panel-title .btn-link:after {
+		right: 0;
+	}
+	.panel-group .panel-title .btn-link:after {
+		color: #ccc;
+	}
+	.panel-group .panel-title .btn-link {
+		font-size: 20px;
+	}
+	.panel-group .panel-body:before {
+		top: -50px;
+	}
+	.panel-group .panel-title h3:before {
+		background-color: #ccc;
+	}
+	.panel-group .panel-body {
+		color: inherit;
+	}
+	.faq-secound-home-version {
+		background-image: inherit;
+		padding: 0;
+		ul.product-tab li {
+			background-color: #f7f7f7;
+			color: #ccc;
+		}
+		ul.product-tab li.active {
+			color: #fff;
+		}
+	}
+	.panel-group .panel {
+		max-width: 385px;
+	}
+}

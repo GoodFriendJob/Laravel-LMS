@@ -1,0 +1,100 @@
+.why-choose-section {
+	background-image: url(../img/banner/wc-1.jpg);
+	padding-top: 115px;
+	.section-title {
+		h2,
+		span {
+			color: #fff;
+		}
+	}
+}
+.features-icon {
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+	line-height: 80px;
+	font-size: 40px;
+	float: left;
+	margin-right: 25px;
+	i {
+		color: #fff;
+	}
+}
+.features-text-title {
+	h3 {
+		font-size: 22px;
+		font-weight: 700;
+		color: #fff;
+	}
+}
+.features-text {
+	overflow: hidden;
+	padding-top: 10px;
+	.features-text-dec {
+		color: #84bfeb;
+	}
+}
+.extra-icon-text {
+	margin-bottom: 45px;
+}
+.extra-right {
+	.features-icon {
+		float: right;
+		margin-left: 25px;
+		margin-right: 0;
+	}
+}
+.version-four {
+	.features-icon {
+		position: relative;
+		.feat-tag span {
+			position: absolute;
+			background-color: #fff;
+			height: 25px;
+			width: 25px;
+			border-radius: 100%;
+			text-align: center;
+			line-height: 25px;
+			font-weight: 700;
+			color: $base-color-2;
+			right: -10px;
+			top: 25px;
+			font-size: 13px;
+		}
+	}
+	.extra-right {
+		.features-icon { 
+			.feat-tag span {
+				left: -10px;
+				right: inherit;
+			}
+		}
+	}
+}
+.course-advantage {
+	padding-top: 65px;
+}
+.service-slide_3 {
+	margin-top: 35px;
+	.service-icon  {
+		float: none !important;
+		margin-bottom: 15px;
+	}
+	.service-text-icon {
+		background-color: #f7f7f7;
+		padding: 20px;
+		border-radius: 4px;
+	}
+	.service-text p {
+		font-size: 15px;
+		color: inherit;
+	}
+	.service-text h3 {
+		font-size: 18px;
+		color: $black;
+		margin-bottom: 10px;
+	}
+	.owl-nav {
+		top: -70px;
+	}
+}

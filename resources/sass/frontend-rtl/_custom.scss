@@ -1,0 +1,36 @@
+// Override the Bootstrap defaults without modifying key, versioned files.
+.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.header-info li:last-child:after{
+  display: none;
+}
+
+#slider-item .owl-nav .owl-prev, #slider-item .owl-nav .owl-next, #slider-item .owl-nav .owl-next {
+  background-color: #6b6b6b;
+}
+
+#slider-item .owl-nav .owl-prev {
+  float: right;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0 5px;
+  color: #dddddd;
+  border-radius: 4px;
+}
+
+#slider-item .owl-nav .owl-next {
+  float: left;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0 5px;
+  color: #dddddd;
+  border-radius: 4px;
+}

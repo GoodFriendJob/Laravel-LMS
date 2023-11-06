@@ -1,0 +1,97 @@
+.pricing-section {
+	padding: 50px 0px 205px 0px;
+}
+
+.pricing-head {
+	background-color: #f7f7f7;
+	padding: 50px 0px;
+	&:after {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		height: 5px;
+		width: 65px;
+		margin: 0 auto;
+		position: absolute;
+		background-color: $base-color;
+	}
+	.save-tag {
+		height: 35px;
+		width: 115px;
+		line-height: 35px;
+		background-color: $base-color;
+		color: $white;
+		font-weight: 700;
+		font-size: 18px;
+		position: absolute;
+		right: 0;
+		top: 65px;
+	}
+	.price-tag {
+		position: absolute;
+		top: 0;
+		right: 45px;
+	}
+}
+.content-price {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1;
+}
+.content-currency {
+	font-size: 25px;
+	font-weight: 700;
+}
+.content-duration {
+	font-size: 24px;
+	font-weight: 300;
+	display: block;
+}
+.pricing-body {
+	padding: 45px 20px 35px;
+	box-shadow:0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.pricing-title {
+	margin-bottom: 30px;
+	height: 60px;
+	h3 {
+		font-size: 24px;
+		font-weight: 600;
+		color: $black;
+	}
+	&:after {
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		content: "\f05a";
+		color: #adadad;
+		font-size: 18px;
+		position: absolute;
+		right: 50px;
+		bottom: 2px
+
+	}
+}
+.pricing-list {
+	margin-bottom: 60px;
+	li {
+		font-size: 24px;
+		color: $black;
+		margin-bottom: 20px;
+	}
+}
+.pricing-button {
+	height: 45px;
+	width: 185px;
+	background-color: $base-color;
+	color: $white;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 45px;
+	border-radius: 50px;
+	margin: 0 auto;
+	a {
+		display: block;
+		width: 100%;
+	}
+}

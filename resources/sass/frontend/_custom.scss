@@ -1,0 +1,14 @@
+// Override the Bootstrap defaults without modifying key, versioned files.
+.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+}
+#slider-item .owl-nav .owl-prev, #slider-item .owl-nav .owl-next, #slider-item .owl-nav .owl-next {
+  background-color: #6b6b6b;
+  color: #dddddd;
+}
+
+.header-info li:last-child:after{
+  display: none;
+}

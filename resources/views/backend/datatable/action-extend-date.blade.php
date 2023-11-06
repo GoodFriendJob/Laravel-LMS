@@ -1,0 +1,1 @@
+<button class="btn btn-xs btn-primary mb-1"  @isset($id) onclick="setid({{ $id }})" @endisset><i class="fas fa-calendar-alt"></i></button>

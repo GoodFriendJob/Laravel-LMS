@@ -1,0 +1,203 @@
+.checkout-section {
+	padding: 80px 0px 0px;
+}
+.checkout-content {
+	.course-page-section {
+		padding: 0;
+	}
+}
+.order-item,
+.order-payment {
+	.section-title-2 {
+		h2 {
+			font-size: 28px;
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+.check-dlt {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	i {
+		transition: .3s all ease-in-out;
+	}
+}
+.order-item {
+	.section-title-2 {
+		h2 {
+			font-size: 28px;
+			&:after {
+				display: none;
+			}
+		}
+	}
+	tr {
+		&:hover .check-dlt i {
+			color: #e61d1d
+		}
+	}
+}
+.checkbox label:after, 
+.radio label:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #f0f0f0;
+	border-radius: .25em;
+	width: 1.3em;
+	height: 1.3em;
+	float: left;
+	margin-right: .5em;
+	background-color: #f7f7f7
+}
+
+.radio .cr {
+	border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+	position: absolute;
+	font-size: .8em;
+	line-height: 0;
+	top: 50%;
+	left: 20%;
+}
+
+.radio .cr .cr-icon {
+	margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+	display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+	transform: scale(3) rotateZ(-20deg);
+	opacity: 0;
+	transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+	transform: scale(1) rotateZ(0deg);
+	opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+	opacity: .5;
+}
+.checkbox {
+	label {
+		font-size: 18px;
+		color: $black;
+		font-weight: 700;
+		.sub-text {
+			font-weight: 400;
+			font-size: 15px;
+			padding-left: 35px;
+			b {
+				color: $base-color-2;
+			}
+		}
+	}
+}
+.save-credit {
+	width: 80%;
+	float: right;
+	margin-top: 10px;
+}
+.payment-method {
+	margin-top: 30px;
+	padding: 35px;
+	display: inline-block;
+	margin-bottom: 45px;
+	box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.payment-method-header {
+    width: 100%;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	display: inline-block;
+	border-bottom: 1px solid #eee;
+}
+.payment-info {
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	label {
+		width: 20%;
+		float: left;
+		color: #999999;
+		margin-top: 15px;
+		font-weight: 500;
+	}
+	input {
+		width: 80%;
+		height: 50px;
+		background-color: #f9f9f9;
+		border-radius: 4px;
+		::-webkit-input-placeholder {
+			color: #999999;
+			font-weight: 500;
+		}
+	}
+}
+.input-2 {
+	input {
+		width: 25%;
+		float: left;
+		margin-right: 10px;
+	}
+}
+.terms-text {
+	border-bottom: 1px solid #eee;
+	b {
+		color: $base-color-2;
+	}
+}
+.sub-total-title {
+	font-size: 12px;
+	font-weight: 700;
+	color: $black;
+}
+.purchase-list  {
+	background-color: #f7f7f7;
+	padding: 40px 25px 30px 25px;
+	ul {
+		li {
+			margin-bottom: 10px;
+			border-bottom: 1px solid #e5e5e5;
+			padding-bottom: 10px;
+			span {
+				float: right;
+				color: $black;
+				font-weight: 700;
+			}
+			&:last-child {
+				border-bottom: 5px solid #e5e5e5;
+			}
+		}
+	}
+	.in-total {
+		font-size: 20px;
+		font-weight: 700;
+		color: $black;
+		span {
+			color: $base-color-2;
+			float: right;
+		}
+	}
+}

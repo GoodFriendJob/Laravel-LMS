@@ -1,0 +1,90 @@
+// Font-Family 
+$heading: 'Roboto', sans-serif;
+$body-font: 'Roboto', sans-serif; 
+
+
+// color code
+$base-color-1: #01a6fd;
+$base-color-2: #17d0cf;
+$black: #333333;
+$gray: #777777;
+$gray-2: #989898;
+$lite-blue: #88c3ef;
+$white: #fff;
+
+@mixin bg-radial($start-colour, $end-colour) {
+	background-image: -webkit-linear-gradient(to right, $start-colour 0%, $end-colour 100%);
+	background-image: linear-gradient(to right, $start-colour 0%, $end-colour 100%);
+	opacity: 0.95;
+  background-size: 200% auto;
+}
+@mixin gradient-border($color1, $color2, $border-width, $direction) {
+  border: none;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#{$direction}, $color1 0%, $color2 100%), linear-gradient(#{$direction}, $color1 0%, $color2 100%);
+  @if $direction == 'to right' or $direction == 'to left' {
+    @if $direction == 'to right' {
+      border-left: $border-width solid $color1;
+      border-right: $border-width solid $color2;
+    } @else {
+      border-left: $border-width solid $color2;
+      border-right: $border-width solid $color1;
+    }
+    background-position: 0 0, 0 100%;
+    background-size: 100% $border-width;
+  }
+  
+  @if $direction == 'to top' or $direction == 'to bottom' {
+    @if $direction == 'to top' {
+      border-top: $border-width solid $color2;
+      border-bottom: $border-width solid $color1;
+    } @else {
+      border-top: $border-width solid $color1;
+      border-bottom: $border-width solid $color2;
+    }
+    background-position: 0 0, 100% 0;
+    background-size: $border-width 100%;
+  }
+}
+
+    @mixin placeholder {
+     &.placeholder { @content; }
+     &:-moz-placeholder { @content; }
+     &::-moz-placeholder { @content; }
+     &::-webkit-input-placeholder { @content; }
+   }
+// Mixins
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -ms-transition:     $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+    } @else {
+      -webkit-box-shadow: $top $left $blur $color;
+      -moz-box-shadow: $top $left $blur $color;
+      box-shadow: $top $left $blur $color;
+    }
+  }
+
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+#course-btn {
+  .genius-btn {
+    margin:  0 auto;
+  }
+}
+
+// Font Family Link
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,700i,900,900i');
